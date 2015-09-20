@@ -21,11 +21,11 @@ second+third => 5 /
 
 var total = function (array) {
 if(array.length === 0 || array === undefined) {return undefined;}
-if(array.length < 2){return array[0];}
+if(array.length < 2) {return array[0];}
 		var newArr = [];
-		for(var i = 0; i < array.length-1; i++){
+		for(var i = 0; i < array.length-1; i++) {
 		newArr.push(array[i] + array[i+1]);
 		}
-	return newArr.length === 2 ? newArr[0] + newArr[1] : total(newArr);
+return total(newArr);
 };
 
